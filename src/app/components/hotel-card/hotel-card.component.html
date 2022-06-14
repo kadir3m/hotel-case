@@ -1,0 +1,27 @@
+<div class="kdr-card">
+  <div class="row">
+    <div class="col-md-4">
+      <img
+        class="card-img"
+        src="https://redzonekickboxing.com/wp-content/uploads/2017/04/default-image.jpg"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-content">
+        <div class="card-title">
+          <span>{{hotelInfo.name}}</span>
+        </div>
+        <div class="card-point">
+          <span>{{hotelInfo.point}} Puan</span>
+        </div>
+        <div class="k-card-footer">
+          <button (click)="changePoint('inc')">Puan Arttır</button>
+          <button (click)="changePoint('dec')">Puan Azalt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="close-button" (click)="onDelete()">
+      <span>X</span>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    .k-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 300px;
+        .k-label {
+            align-self: flex-start;
+            font-size: 21px;
+        }
+        .k-input {
+            input {
+                height: 80px;
+                width: 300px;
+                border-radius: 6px;
+                border: 1px solid #bababa;
+                font-size: 24px;
+            }
+        }
+        .k-button {
+            align-self: flex-end;
+            margin-top: 8px;
+            .add-button {
+                    border-radius: 6px;
+                    color: #ffffff;
+                    letter-spacing: 0.5px;
+                    padding: 12px 37px 12px 37px;
+                    font-weight: 500;
+            }
+                .blue {
+                    background-color: rgb(36, 64, 242);
+                    border: 1px solid #297bfe;
+                    &:hover {
+                      background-color: rgba(36, 64, 242, 0.679);
+                    }
+                  }
+                  .green {
+                    background-color: #50c808;
+                    border: 1px solid #50c808;
+                  }
+                  
+        }
+    }}
+

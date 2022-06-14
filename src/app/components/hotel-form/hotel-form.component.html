@@ -1,0 +1,15 @@
+<div class="form-container">
+  <div class="k-form">
+    <div class="k-label">
+      <span>Otel Adı</span>
+    </div>
+    <div class="k-input">
+      <input type="text" [(ngModel)]="entity.name" />
+    </div>
+    <div class="k-button">
+      <button class="add-button" [ngClass]="isAdded ? 'green' : 'blue' " (click)="addHotel()">
+        <i *ngIf="isAdded" class="fa fa-check fa-lg"></i> {{isAdded ? 'EKLENDİ' : 'EKLE'}}
+      </button>
+    </div>
+  </div>
+</div>

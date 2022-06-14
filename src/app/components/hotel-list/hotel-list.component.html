@@ -1,0 +1,26 @@
+
+<div class="k-container">
+    <div class="k-button">
+        <div class="add-button" (click)="goToAddHotelPage()">
+             <i class="fa fa-plus"></i> 
+        </div>
+        <span style="margin-left: 6px;">OTEL EKLE</span>
+
+    </div>
+    <div class="dropdown k-dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/arrows-down-up-3601710-3002678.png" style="height: 15px !important;">
+             Sıralama
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button" (click)="sortByPoint('inc')">Puan (Artan)</button></li>
+          <li><button class="dropdown-item" type="button" (click)="sortByPoint('dec')">Puan (Azalan)</button></li>
+        </ul>
+      </div>
+    <div *ngFor="let item of hotelList | paginate: config">
+  <app-hotel-card [hotelInfo]="item" (onDeleteEmitter)="deleteHotel($event)"></app-hotel-card>
+
+    </div>
+    <pagination-controls (pageChange)="pageChange($event)" class="my-pagination"></pagination-controls>
+
+</div>

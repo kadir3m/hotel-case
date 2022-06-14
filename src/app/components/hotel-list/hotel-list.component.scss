@@ -1,0 +1,16 @@
+.k-button {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.k-dropdown {
+    margin-top: 15px !important;
+    .btn-secondary {
+        color: rgb(42, 42, 42);
+        background-color: #ffffff;
+        border-color: #ffffff;
+        border-radius: 6px;
+        box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+    }
+}

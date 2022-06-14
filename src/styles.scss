@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+$fa-font-path: "../node_modules/font-awesome/fonts";
+
+.k-container {
+  margin: 40px 200px 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .add-button {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    align-self: flex-start;
+    border: 1px solid #297bfe;
+    border-radius: 6px;
+    display: flex;
+    color: #297bfe;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #0087ff2b;
+      cursor: pointer;
+    }
+  }
+  .kdr-card {
+    border-radius: 6px;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 15%);
+    background-color: #ffffff;
+    margin-top: 20px;
+    width: 600px;
+    position: relative;
+    .close-button {
+      display: none;
+    }
+    &:hover {
+      background-color: #0087ff2b;
+      cursor: pointer;
+      .close-button {
+        width: 25px;
+        height: 25px;
+        background-color: #dc0505;
+        border-radius: 50%;
+        position: absolute;
+        right: -12px;
+        top: -12px;
+        text-align: center;
+        color: white;
+        display: block;
+      }
+    }
+    .card-img {
+      margin: 8px;
+      border-radius: 6px;
+      min-height: 123px;
+    }
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-around;
+      .card-title {
+        span {
+          font-size: 22px;
+          color: rgb(62, 62, 62);
+          letter-spacing: 0.5px;
+        }
+      }
+      .card-point {
+        width: 40%;
+        background-color: #f7f9fd;
+        padding: 5px;
+        color: #0cc5bc;
+        letter-spacing: 0.5px;
+
+        border-radius: 6px;
+      }
+      .k-card-footer {
+        button {
+          background-color: white;
+          border: 1px solid #297bfe;
+          border-radius: 6px;
+          color: #297bfe;
+          letter-spacing: 0.5px;
+          padding: 7px 17px 7px 17px;
+          margin-right: 16px;
+
+          &:hover {
+            background-color: #255dcb2e;
+          }
+        }
+      }
+    }
+  }
+}
+.modal-overlay {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s ease;
+  .k-modal {
+    width: 450px;
+    height: 300px;
+    text-align: left;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    border-radius: 6px;
+    margin-left: -187px;
+    margin-top: -198px;
+    padding: 20px;
+    z-index: 4;
+    background-color: white;
+    .k-modal-header {
+      font-size: 28px;
+      flex: 1;
+    }
+    .k-modal-content {
+      font-size: 20px;
+      padding: 30px;
+      flex: 1;
+    }
+    .k-modal-footer {
+      display: flex;
+      justify-content: space-around;
+      .button {
+        border: 1px solid #297bfe;
+        border-radius: 8px;
+        padding: 18px 54px 18px 54px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        &-accept {
+          background-color: rgb(67 89 234);
+
+          color: #ffffff;
+
+          &:hover {
+            background-color: rgba(36, 64, 242, 0.679);
+          }
+        }
+        &-deny {
+          background-color: white;
+          color: #297bfe;
+
+          &:hover {
+            background-color: #255dcb2e;
+          }
+        }
+      }
+    }
+  }
+}
+.ngx-pagination {
+    margin-top: 22px;
+}
